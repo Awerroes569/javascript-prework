@@ -1,4 +1,10 @@
-let computerMove = `kamień`;
-let playerMove = 'papier';
+console.log("generating number using dictionary")
+generateMove(generateMoveDict, 10);
 
-printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to ' + playerMove + ', to wygrywasz!');
+console.log("generating number using if else loop")
+generateMove(generateMoveIf, 10);
+
+console.log("receiving computer move")
+let computerMove = generateMoveIf()
+console.log("Computer move is: " + computerMove)
+
